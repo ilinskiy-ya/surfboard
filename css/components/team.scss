@@ -1,0 +1,81 @@
+.section__team {
+    min-height: rem(600px);
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+}
+
+.team--version--desktop {
+    
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
+}
+
+.team--version--mobile{
+    
+    display: none;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__item{
+    margin-right: rem(20px);
+    max-width: rem(220px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    & :last-child {
+        margin-right: 0;
+    }
+}
+
+
+.team__content{
+    overflow: hidden;
+    height: 0px;
+    transition: 0.5s;
+
+    &--version--desktop {
+        position: absolute;
+    margin-top: 315px;
+    width: 221px;
+    }
+}
+
+.team__title {
+    background-color: #fff;
+    border: 0px;
+    color: #292929;
+    font-size: rem(21px);
+    font-weight: 700;
+    background: url(../../img/team/Polygon2.svg) right center no-repeat;    
+}
+
+.team__item.active {
+    &:hover{
+        background: url(../../img/team/Polygon1.svg) right center no-repeat;
+        z-index: 1;
+    }
+}
+
+.team__job  {
+    font-size: rem(18px);
+    color: #292929;
+}
+
+.team__content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+

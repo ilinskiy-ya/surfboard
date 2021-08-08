@@ -1,0 +1,38 @@
+$containerwith: 1100px;
+$basefontsize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
+
+$z-fixed-menu: 100; 
+
+@import "./media.scss";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap');
+@import "./layout.scss";
+@import "./hero.scss";
+@import "./header.scss";
+@import "./features.scss";
+@import "./feature.scss";
+@import "./btn.scss";
+@import "./section.scss";
+@import "./headline.scss";
+@import "./benefits.scss";
+@import "./benefit.scss";
+@import "./reviews.scss";
+@import "./interactive-avatar.scss";
+@import "./order.scss";
+@import "./form.scss";
+@import "./radio.scss";
+@import "./fixed-menu.scss";
+@import "./map.scss";
+@import "./hamburger.scss";
+@import "./footer.scss";
+@import "./socials.scss";
+@import "./product.scss";
+@import "./popup.scss";
+@import "./team.scss";
+@import "./popup__order.scss";
+

@@ -1,0 +1,26 @@
+.footer-container {
+    min-height: rem(100px);
+    display: flex;
+
+    
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+.location {
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

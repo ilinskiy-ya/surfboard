@@ -1,0 +1,46 @@
+.button {
+    font-size: rem(19px);
+    font-weight: bold;
+    padding: rem(18px) rem(30px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    background: yellow;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    
+    @include phones {
+        padding: rem(26px) rem(49px);
+    }
+
+  /* &--transparent {
+        background: transparent;
+        color: #fff;
+    }*/
+
+}
+
+.form__btns {
+    margin-top: rem(50px);
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.button:hover {
+    background: #fff;
+}
+
+.button--transparent {
+    background: transparent;
+        color: #fff;
+}
+
+.button--transparent:hover {
+    background: transparent;
+        color: #fff;
+}

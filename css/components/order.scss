@@ -1,0 +1,12 @@
+.order-section{
+    background: url(../../img/bg-bottom.jpg) center top no-repeat;
+    background-color: rgba($color: #00000000, $alpha: 0.1)
+    
+    background-size cover;
+    @include tablets {
+        background: url(../../img/bg-bottom-tablet.jpg);
+        min-height: rem(868px);
+    }
+
+}
+
