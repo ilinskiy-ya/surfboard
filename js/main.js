@@ -136,11 +136,11 @@ function init(){
     });
 }*/
 
-let myMaps;
+let myMap;
 
 const init = () => {
-    myMaps = new ymaps.Map("map", {
-        center: [55.76, 37.64],
+    myMap = new ymaps.Map("map",{
+        center: [54.73, 20.51],
         zoom: 7
     });
 }
