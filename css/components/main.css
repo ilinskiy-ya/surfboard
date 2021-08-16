@@ -915,14 +915,12 @@ img {
   }
 }
 
-.map {
-  /* background: url(../../img/map.jpg) center top no-repeat;*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.map--section {
+  /*background: url(../../img/map.jpg) center top no-repeat;*/
+  /* display: flex;
+   justify-content: center;*/
+  height: 100%;
+  width: 100%;
 }
 
 .hamburger {
@@ -1646,4 +1644,39 @@ p {
 
 .popup__order {
   display: none;
+}
+
+.order__background {
+  background-color: rgba(102, 102, 102, 0.7);
+  position: absolute;
+  height: 36.2222222222rem;
+  width: 55.5555555556rem;
+  margin-left: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order__completed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  height: 176px;
+  width: 309px;
 }

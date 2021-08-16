@@ -1,3 +1,11 @@
-.map {
-  background: url(../../img/map.jpg) top center no-repeat;
+.map--section {
+  /* background: url(../../img/map.jpg) center top no-repeat;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 600px;
 }

@@ -126,4 +126,23 @@ $(".js-button").click(e =>{
     $.fancybox.close();
 });
 
+//карта
 
+/*ymaps.ready(init);
+function init(){
+    var myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 7
+    });
+}*/
+
+let myMaps;
+
+const init = () => {
+    myMaps = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 7
+    });
+}
+
+ymaps.ready(init);

@@ -2,3 +2,27 @@
     display: none;    
 }
 
+//order__completed
+
+.order__background {
+    background-color: rgba(102, 102, 102, 0.7);
+    position: absolute;
+    height: rem(652px);
+    //width: 100vh;
+     width: rem(1000px);
+    margin-left: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order__completed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    //position: absolute;
+    height: 176px;
+    width: 309px;
+}
