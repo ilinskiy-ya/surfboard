@@ -16,8 +16,9 @@
     }
 
     @include phones {
-        background: url(../../img/bd-phone.jpg);
-        min-height: rem(800px);
+        background: url(../../img/bd-phone.jpg) ;
+        min-height: rem(800px);      
+        background: url(../../img/bg-tablet.jpg) rgba(105, 105, 105, 0);
     }
 }
 

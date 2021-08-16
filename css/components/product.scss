@@ -1,9 +1,9 @@
 .container__product {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;    
+    justify-content: center;  
     
-
     .bx-wrapper {
         border: 0px;
         box-shadow: none;
