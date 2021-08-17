@@ -381,7 +381,7 @@ img {
 }
 
 .section {
-  /* height: 100vh;*/
+  height: 100vh;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,7 +683,7 @@ img {
 }
 
 .order-section {
-  background: url(../../img/bg-bottom.jpg) center top no-repeat;
+  background: url(../../img/bg-bottom.jpg) center no-repeat;
   background-color: rgba(0, 0, 0, 0.1) background-size cover;
 }
 @media screen and (max-width: 768px) {
