@@ -75,19 +75,20 @@ $(".arrow__right").click(e =>{
 
 
 //заказы popup
-
+    const modal = $(".order__background");
 $(".form").submit (e =>{
     e.preventDefault();
 
+    
     const form = $(e.currentTarget);
     const name = form.find('[name="name"]');
     const phone = form.find('[name="phone"]');
     const street = form.find('[name="street"]');
     const house = form.find('[name="house"]');
     const flat = form.find('[name="flat"]');
-    const to = form.find('[name="to"]');
+  //  const to = form.find('[name="to"]');
 
-    [name, phone, street, house, flat, to].forEach((filed) =>{
+    [name, phone, street, house, flat].forEach((filed) =>{
         filed.removeClass("input-error");
         if(filed.val().trim() ==""){
             filed.addClass("input-error");
@@ -95,35 +96,48 @@ $(".form").submit (e =>{
     });
 
     const errorFields = form.find("input-error");
+    console.log(errorFields);
 
-    if (errorFields.lenght == 0) {
+    if (errorFields.length == 0) {
         $.ajax({
             URL: "https://webdev-api.loftschool.com/sendmail",
             method: "post",
             data: {
                 name: name.val(),
                 phone: phone.val(),
-                street: street.val(),
+                comment: street.val(),
                 house: house.val(),
                 flat: flat.val(),
-                to: to.val(),
+                to: "test@test.ru"
             },
+            success: data => {
+          //      modalText.text(data.message)
+                  modal.addClass("order__background_active");
+              },
+              error: data =>{
+           //     console.log(data);
+            //    const ErrMessage = data.responseJSON.message;
+              //  modalText.text(ErrMessage);
+              //  $(modalText).css("color", "red");
+                modal.addClass("order__background_active");
+              }
+            
         });
     }
 
     
 
-    $.fancybox.open({
+    /*$.fancybox.open({
         src: "#popup",
         type: "inline"
-    })
+    })*/
     
 });
 
-$(".js-button").click(e =>{
+$(".button__close").click(e =>{
     e.preventDefault();
 
-    $.fancybox.close();
+    modal.removeClass("order__background_active");
 });
 
 //карта
@@ -141,8 +155,50 @@ let myMap;
 const init = () => {
     myMap = new ymaps.Map("map",{
         center: [54.73, 20.51],
-        zoom: 7
+        zoom: 16
     });
 }
 
 ymaps.ready(init);
+
+//OPC
+
+/*const sections = $('section');
+const display = $(".maincontent");
+
+sections.first().addClass("active");
+
+const performTransition = sectionEq => {
+    const position = sectionEq * -50;
+
+    display.css ({
+        transform: `translateY(${position}%)`
+    });
+}
+
+const scrollVivport = direction => {
+    const activeSection = section.filter(".active");
+    const nextSection = activeSection.next();
+    const prevSection = activeSection.prev();
+
+    if (direction == "next") {
+
+    }
+
+    if (direction == "prev") {
+
+    }
+}
+
+$(window).on("wheel", e => {
+    const deltaY = e.originalEvent.deltaY;
+
+    if (deltaY > 0) {
+        performTransition(2);
+    }
+
+    if (deltaY < 0) {
+
+    }
+    console.log(deltaY);
+})*/

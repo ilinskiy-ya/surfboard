@@ -6,14 +6,19 @@
 
 .order__background {
     background-color: rgba(102, 102, 102, 0.7);
-    position: absolute;
-    height: rem(652px);
+    position: absolute; 
     //width: 100vh;
-    width: rem(1100px);
-    margin-left: 132px;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none; 
+    &_active {
+        display: flex;
+    }
 }
 
 .order__completed {
