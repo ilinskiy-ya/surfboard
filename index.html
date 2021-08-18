@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-         <section data-section-id="hero" class="hero">
+         <section data-sidemenu-theme = "white" data-section-id="hero" class="hero">
              <div class="container hero__container">
                  
                 <header class="header">
@@ -88,7 +88,7 @@
                 </div>
              </div>
          </section>
-         <section data-section-id="benefits" class="section">
+         <section data-sidemenu-theme = "black" data-section-id="benefits" class="section">
              <div class="container">
                  <div class="headline">
                     <h2 class="section__title headline__title">ПОЧЕМУ SERFBOARD?</h2>
@@ -144,7 +144,7 @@
              </div>
          </section>
 
-         <section data-section-id="products" class="section ">
+         <section data-sidemenu-theme = "black" data-section-id="products" class="section ">
              <div class="container container__product">
                <div class="arrow">
                     <a href="#" class="arrow__left" ></a>
@@ -345,7 +345,7 @@
 
              </section>
              
-             <section data-section-id="team" class="section section__team">
+             <section data-sidemenu-theme = "black" data-section-id="team" class="section section__team">
                 <div class="container">
                     <h2 class="section__title headline__title">КОМАНДА</h2>
                     <ul class="team team--version--desktop">
@@ -452,7 +452,7 @@
             </section>
             
         
-        <section data-section-id="review" class="section section__reviews">
+        <section data-sidemenu-theme = "black" data-section-id="review" class="section section__reviews">
             <div class="container container__reviews">
                <h2 class="section__title">ОТЗЫВЫ</h2>
                <div class="reviews">
@@ -567,11 +567,11 @@
            </div>
         </section>-->
 
-        <section data-section-id="player" class="section player-section">
+        <section data-sidemenu-theme = "black" data-section-id="player" class="section player-section">
            <div class="section__title">КАК МЫ РАБОТАЕМ</div>
            <iframe width="560" height="315" src="https://www.youtube.com/embed/gH3cO1cYQ6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        <section data-section-id="order" class="section order-section section--font-color">
+        <section data-sidemenu-theme = "black" data-section-id="order" class="section order-section section--font-color">
             
            <div class="order__background">
                <div class="order__completed">
@@ -656,7 +656,7 @@
                </form>
            </div>
         </section>
-        <section data-section-id="map" class="section map--section">
+        <section data-sidemenu-theme = "black" data-section-id="map" class="section map--section">
            <div class="" id="map"></div>
           
         </section>  
@@ -701,31 +701,31 @@
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
-                <a href="#" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="benefits"  class="fixed-menu__link fixed-menu__link--shadowed"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="products"  class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="team"  class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="review"  class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="player"  class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="order"  class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="map"  class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" data-scroll-to="hero"  class="fixed-menu__link"></a>
             </li>
         </ul>
     </nav>

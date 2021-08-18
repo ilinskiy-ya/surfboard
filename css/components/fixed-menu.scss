@@ -9,13 +9,13 @@
     margin-bottom: rem(5px);
 
     &--active {
-        .fixed-menu__link {
-            border-color: #fff;
+        .fixed-menu__link:hover {
+             border-color: yellow
         }
     }
 }
 
-.fixed-menu__link {
+.fixed-menu__link   {
     width: rem(16px);
     height: rem(16px);
     border-radius: 50%;
@@ -24,12 +24,12 @@
     position: relative;
 
     &::before {
-        content: "";
+        content: " ";
         display: block;
         width: rem(6px);
         height: rem(6px);
         border-radius: 50%;
-        background: white;
+        background: #fff;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -42,3 +42,10 @@
         display: none;
     }
 }
+
+.fixed-menu--shadowed {
+    .fixed-menu__link{
+    background-color: #000;
+    }
+}
+
