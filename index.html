@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-         <section class="hero">
+         <section data-section-id="hero" class="hero">
              <div class="container hero__container">
                  
                 <header class="header">
@@ -25,25 +25,25 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">О нас</a>
+                                <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Серфборды</a>
+                                <a href="#" data-scroll-to="products" class="menu__link">Серфборды</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Команда</a>
+                                <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Меню</a>
+                                <a href="#" data-scroll-to="order" class="menu__link">Меню</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
+                                <a href="#" data-scroll-to="review" class="menu__link">Отзывы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Как мы работаем</a>
+                                <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
+                                <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                             </li>                            
                         </ul>
                     </nav>
@@ -62,7 +62,7 @@
                 <div class="hero__title-section">
                     <h1 class="hero__main-title">Профессиональные доски для сёрфинга</h1>
                     <div class="hero__title-desc">Самый большой выбор серфбордов в мире</div>
-                    <a href="#" class="button">Заказать</a>
+                    <a href="#" data-scroll-to="order" class="button">Заказать</a>
                 </div>
                 <div class="hero__icon-section">
                     <ul class="features">
@@ -88,7 +88,7 @@
                 </div>
              </div>
          </section>
-         <section class="section">
+         <section data-section-id="benefits" class="section">
              <div class="container">
                  <div class="headline">
                     <h2 class="section__title headline__title">ПОЧЕМУ SERFBOARD?</h2>
@@ -144,7 +144,7 @@
              </div>
          </section>
 
-         <section class="section ">
+         <section data-section-id="products" class="section ">
              <div class="container container__product">
                <div class="arrow">
                     <a href="#" class="arrow__left" ></a>
@@ -237,7 +237,7 @@
                                        </div>
                                        <div class="price__product">
                                            <div class="summ_product">7000 ₽</div>
-                                           <a href="#" class="button">Заказать</a>
+                                           <a href="#" data-scroll-to="order" class="button">Заказать</a>
                                        </div>
                                    </div>
                                </li>
@@ -329,7 +329,7 @@
                                        </div>
                                        <div class="price__product">
                                            <div class="summ_product">12000 ₽</div>
-                                           <a href="#" class="button">Заказать</a>
+                                           <a href="#" data-scroll-to="order" class="button">Заказать</a>
                                        </div>
                                    </div>
                                </li>
@@ -345,7 +345,7 @@
 
              </section>
              
-             <section class="section section__team">
+             <section data-section-id="team" class="section section__team">
                 <div class="container">
                     <h2 class="section__title headline__title">КОМАНДА</h2>
                     <ul class="team team--version--desktop">
@@ -452,7 +452,7 @@
             </section>
             
         
-        <section class="section section__reviews">
+        <section data-section-id="review" class="section section__reviews">
             <div class="container container__reviews">
                <h2 class="section__title">ОТЗЫВЫ</h2>
                <div class="reviews">
@@ -567,11 +567,11 @@
            </div>
         </section>-->
 
-        <section class="section player-section">
+        <section data-section-id="player" class="section player-section">
            <div class="section__title">КАК МЫ РАБОТАЕМ</div>
            <iframe width="560" height="315" src="https://www.youtube.com/embed/gH3cO1cYQ6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        <section class="section order-section section--font-color">
+        <section data-section-id="order" class="section order-section section--font-color">
             
            <div class="order__background">
                <div class="order__completed">
@@ -656,7 +656,7 @@
                </form>
            </div>
         </section>
-        <section class="section map--section">
+        <section data-section-id="map" class="section map--section">
            <div class="" id="map"></div>
           
         </section>  
