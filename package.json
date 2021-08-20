@@ -1,0 +1,26 @@
+{
+  "name": "second_try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilinskiy-ya/--------------.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilinskiy-ya/--------------/issues"
+  },
+  "homepage": "https://github.com/ilinskiy-ya/--------------#readme",
+  "dependencies": {
+    "jquery-touchswipe": "^1.6.19"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "webpack": "^5.51.1"
+  }
+}
