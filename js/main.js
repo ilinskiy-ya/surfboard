@@ -291,6 +291,7 @@ $("[data-scroll-to]").click(e => {
 
 
 //MOBILE
+
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
 $("body").swipe({
@@ -301,8 +302,7 @@ $("body").swipe({
         if (direction == "up") scrollDirection ="next";
         if (direction == "down") scrollDirection = "prev";
         
-        scroller[scrollDirection]();        
-    
+        scroller[scrollDirection]();     
 },
 });
 
