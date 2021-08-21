@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/ilinskiy-ya/--------------#readme",
   "dependencies": {
-    "jquery-touchswipe": "^1.6.19"
+    "jquery-touchswipe": "^1.6.19",
+    "swiper": "^6.8.3"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

@@ -294,7 +294,7 @@ $("[data-scroll-to]").click(e => {
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-$("body").swipe({
+/*$("body").swipe({
     swipe: function (event, direction) {
         const scroller = viewportScroller();
         let scrollDirection = "";
@@ -304,13 +304,13 @@ $("body").swipe({
         
         scroller[scrollDirection]();     
 },
-});
+});*/
 
 
 
 /*
 $(function() {
-    $("#test").swipe( {
+    $("body").swipe( {
       //Generic swipe handler for all directions
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         $(this).text("You swiped " + direction );  
@@ -318,5 +318,5 @@ $(function() {
     });
   
     //Set some options later
-    $("#test").swipe( {fingers:2} );
+    $("body").swipe( {fingers:2} );
   });*/
