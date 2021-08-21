@@ -294,7 +294,7 @@ $("[data-scroll-to]").click(e => {
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-/*$("body").swipe({
+$("wrapper").swipe({
     swipe: function (event, direction) {
         const scroller = viewportScroller();
         let scrollDirection = "";
@@ -304,7 +304,7 @@ $("[data-scroll-to]").click(e => {
         
         scroller[scrollDirection]();     
 },
-});*/
+});
 
 
 

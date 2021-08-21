@@ -6,11 +6,12 @@
 }
 
 .fixed-menu__item {
-    margin-bottom: rem(5px);
+    margin-bottom: rem(10px);
+    cursor: pointer;
 
     &--active {
         .fixed-menu__link:hover {
-             border-color: yellow
+             border-color: #fff
         }
     }
 }
@@ -45,7 +46,7 @@
 
 .fixed-menu--shadowed {
     .fixed-menu__link{
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.432);
     }
 }
 

@@ -892,10 +892,11 @@ img {
 }
 
 .fixed-menu__item {
-  margin-bottom: 0.2777777778rem;
+  margin-bottom: 0.5555555556rem;
+  cursor: pointer;
 }
 .fixed-menu__item--active .fixed-menu__link:hover {
-  border-color: yellow;
+  border-color: #fff;
 }
 
 .fixed-menu__link {
@@ -927,7 +928,7 @@ img {
 }
 
 .fixed-menu--shadowed .fixed-menu__link {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.432);
 }
 
 .map--section {
