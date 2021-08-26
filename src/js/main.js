@@ -18,9 +18,10 @@ $('.interactive-avatar__link').click(e =>{
 
 });
 
-//interactive-avatar__link
+//interactive-avatar__link 
 
 //команада
+
 const openItem = item => {
     const container = item.closest(".team__item");
     const contentBlock = container.find(".team__content");
