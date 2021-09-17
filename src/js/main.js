@@ -205,12 +205,12 @@ const performTransition = (sectionEq) => {
 
         inScroll = true;
 
-        const position = countSectionPosition (sectionEq);
+        const position = countSectionPosition(sectionEq);
 
         chandgeMenuThemeForSection(sectionEq);
 
         display.css ({
-            transform: `translateY(${position}%)`
+            transform: `translateY(${position}%)`,
         });
 
         const resetActiveClassForItem = (items, itemEq, activeClass) => {
@@ -223,7 +223,7 @@ const performTransition = (sectionEq) => {
 
         setTimeout(()=>{
             inScroll = false;                 
-            resetActiveClassForItem (menuItens, sectionEq,"fixed-menu__item--active" )      
+            resetActiveClassForItem(menuItens, sectionEq,"fixed-menu__item--active" )      
             
         }, transitionOver + mouseInertialOver);       
 };
@@ -264,23 +264,23 @@ $(window).on("wheel", (e) => {
 
 $(window).on("keydown", (e) => {
     const tagName = e.target.tagName.toLowerCase();
-    const userTupingInputs =tagName == "input" || tagName ==  "textarea";
+    const userTypingInInputs = tagName == "input" || tagName ==  "textarea";
     const scroller = viewportScroller();
 
-    if (userTupingInputs) return;
+    if (userTypingInInputs) return;
  
-        switch (e.keyCode) {
+        switch (e.keyCode) { //заменил keyCode  на key
             case 38:
-            scroller ("prev");
+            scroller.prev();
             break;
     
             case 40:
-                scroller ("next");
+                scroller.next();
                 break;
         }        
 });
 
-$("[data-scroll-to]").click(e => {
+$("[data-scroll-to]").click(e => { //заменил click на on
     e.preventDefault();
 
     const $this = $(e.currentTarget);
@@ -295,22 +295,19 @@ $("[data-scroll-to]").click(e => {
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-$("wrapper").swipe({
-    swipe: function (event, direction) {
-        const scroller = viewportScroller();
-        let scrollDirection = "";
-        
-        if (direction == "up") scrollDirection ="next";
-        if (direction == "down") scrollDirection = "prev";
-        
-        scroller[scrollDirection]();     
-},
+$("body").swipe({
+    swipe: function (
+        event,
+        direction,
+    ) {
+        alert(direction);
+    },
 });
 
 
 
 
-$(function() {
+/*$(function() {
     $("body").swipe( {
       //Generic swipe handler for all directions
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -321,3 +318,4 @@ $(function() {
     //Set some options later
     $("body").swipe( {fingers:2} );
   });
+*/
