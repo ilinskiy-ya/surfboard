@@ -117,7 +117,7 @@ task("team", () => {
     .pipe(reload({stream:true}));    
 });
 
-
+//иконки с ними не получилось
 /*task("icons", () => {
     return src("src/img/*.*")
      .pipe(

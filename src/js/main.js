@@ -268,7 +268,7 @@ $(window).on("keydown", (e) => {
     const scroller = viewportScroller();
 
     if (userTupingInputs) return;
-
+ 
         switch (e.keyCode) {
             case 38:
             scroller ("prev");
@@ -309,7 +309,7 @@ $("wrapper").swipe({
 
 
 
-/*
+
 $(function() {
     $("body").swipe( {
       //Generic swipe handler for all directions
@@ -320,4 +320,4 @@ $(function() {
   
     //Set some options later
     $("body").swipe( {fingers:2} );
-  });*/
+  });
